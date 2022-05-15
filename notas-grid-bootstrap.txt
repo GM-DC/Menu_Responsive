@@ -1,0 +1,275 @@
+Bootstrap 5
+______________
+📒 Clases CSS Layout
+     📒 Contenedor
+		          📝 container
+		               Centrar el contenido 
+		
+		          📝 container-tamaño
+		                    Tamaños --> sm, md, lg, xl
+		               Centrar el contenido del elemento en un tamño especial. 
+		
+		          📝 container-fluid
+		               Abarcar el 100% del ancho de la pagina en todos los tamaños. 
+     
+     📒 Fila
+	          📝 row
+		               🔸 row-cols-numero
+		                     cuantos columnas vas a tener en una fila 
+		
+		               🔸 row-cols-tamaño-numero
+		                    sm   Más de 576px y menos de 768px
+		                    md   Más de 768px y menos de 992px
+		                    lg   Más de 992px y menos de 1200px
+		                    xl   Más de 1200px
+		
+		           🔸 row-cols-auto
+		                    El ancho de las columnas que estan dentro de la row va ser igual al contenido que guardan.
+
+     📒 Columna
+	          📝 col
+		               🔸 col
+		                    Dividir las 12 columnas en el numero de columnas que hay dentro de un row. 
+		               
+		               🔸 col-auto
+		                    El ancho del elemento es igual a su contenido. 
+		
+		               🔸 col-numero
+		                    El ancho de columna es igual al numero que le pases. 
+		
+		               🔸 col-tamaño
+		                    sm   Más de 576px y menos de 768px
+		                    md   Más de 768px y menos de 992px
+		                    lg   Más de 992px y menos de 1200px
+		                    xl   Más de 1200px
+		          
+		               🔸 col-tamaño-auto
+		
+		               🔸 col-tamaño-numero
+     
+	          📝 w-100
+     
+     📒 Alineación
+     
+	          📝 Sintaxis: 
+		             eje-modo-ubicación
+		
+		          Eje: 
+		               main axis --> justify  (Toma todo el ancho)
+		               cross axis--> align    
+		
+		          Modo:
+		               content --> Grupo 
+		               items   --> línea
+		               self    --> Individual
+		          
+		          Ubicación 
+		               align: start  --> inicio 
+		                      center --> centro
+		                      end    --> fin
+		
+		               justify: start  --> inicio
+		                        center --> centro
+		                        end    --> final
+		                        around --> alrededor del contenido (No toma en cuenta el inicio y final)
+		                        between--> entre
+                                  evenly --> alrededor del contenido (Si toma en cuenta el inicio y final)
+
+     📒 no-gutters (g-0)       (Elimina los ancho y largos de los marges de row y col)
+
+	          📝 Gutter en los cuatro lados: 
+		             🔸 g-valor
+                       🔸 B-pantalla-valor
+
+                    Valor:
+                         0,1,2,3,4,5
+                    Pantalla:
+                         xs,sm,md,lg,xl,xxl
+
+		     📝 Gutter en horizontal: 
+		             🔸 gx-valor
+                       🔸 gx-pantalla-valor
+
+                    Valor:
+                         0,1,2,3,4,5
+                    Pantalla:
+                         xs,sm,md,lg,xl,xxl
+
+               📝 Gutter en Vertical: 
+		             🔸 gy-valor
+                       🔸 gy-pantalla-valor
+
+                    Valor:
+                         0,1,2,3,4,5
+                    Pantalla:
+                         xs,sm,md,lg,xl,xxl
+
+
+     📒 Desplazamiento
+		          📝 Offset
+		               Sintaxis: 
+		               offset-tamaño-numero
+		
+		               tamaño --> Opcional
+		               numero --> numero de columnas 
+		          
+		          📝 Margin
+		               Sintaxis:
+		               dirección-tamaño-auto
+		
+		               dirección: dirección del Margin
+		                         ml (B5/ms) --> Margin left
+		                         mr (B5/me) --> Margin right
+		               
+		               tamaño: Opcional
+		                          sm   Más de 576px y menos de 768px
+		                          md   Más de 768px y menos de 992px
+		                          lg   Más de 992px y menos de 1200px
+		                          xl   Más de 1200px
+		
+		               auto: palabra clave. 
+               
+     📒 Re-ordenamiento.
+	          📝 Sintaxis: 
+		               order-tamaño-numero 
+		
+		               tamaño : Opcional
+		               numero: de 1 a 12. (B5/1 a 5) 
+
+                         order-first --> Pone la columna hasta el inicio --> order:-1; -1<0
+                         order-last --> Pone la columna hasta el inicio --> order:6
+     
+     📒 Anidación
+
+
+
+______________
+📒 Colores
+          📝 Colores
+                    🔸primary --> azul
+                    🔸secondary --> gris
+                    🔸success --> verde
+                    🔸danger --> rojo
+                    🔸info --> turquesa
+                    🔸light --> blanco gris
+                    🔸dark --> negro 80%
+                    🔸white --> blanco
+                    🔸transparent --> transparente
+                    🔸while-50 --> blanco 50%
+                    🔸black-50 --> negro 50%
+                    🔸muted --> Gris claro
+                    🔸body --> negro, blanco
+
+          📝 Colores en fondos
+               Sintaxis:
+                         🔸bg-(color) : background - Fondo
+
+                         🔸bg-gradient
+
+                         🔸bg-opacity-(valor)
+                              valor: 10 / 25 / 50 / 75
+
+          📝 Colores en texto
+               Sintaxis:
+                         🔸text-(color) : Recomendable para texto normales
+
+                         🔸link-(color) : Texto de actuan de inprevinculo (<a>)
+						 	text				Estilos en :hover y :focus
+
+                         🔸text-opacity-(valor)
+                              valor: 10 / 25 / 50 / 75     
+
+
+______________
+📒 Bordes
+        📝 Añadir bordes
+                    🔸border
+                    🔸border-(lado)
+							-top
+							-right
+							-bottom
+							-left
+		
+		📝 Añadir color a bordes
+                    🔸border-(color)
+							-primary
+							-secondary
+							-success
+							-danger
+							-warning
+							-info
+							-light
+							-dark
+							-white
+
+		📝 Eliminar bordes:
+                    🔸border-0
+					🔸border-(lado)-0
+							-top
+							-right (B5/ -end)
+							-bottom
+							-left (B5/ -start)
+
+		📝 Añadir tamaño a los bordes:
+					🔸border-(valor)
+							valor: 1 / 2 / 1 3 / 4 / 5 
+
+📒 Bordes redondeados
+        📝 Añadir bordes redondeados
+                    🔸rounded
+					🔸rounded-circle
+					🔸rounded-pill
+					🔸rounded-(lado)
+							 -top
+							 -right
+							 -botton
+							 -left (B5/ -start)
+
+		📝 Eliminar bordes redondeados
+		            🔸rounded-0
+		📝 Tamaños de bordes redondeados
+		            🔸rounded-(tamaño)
+							 -sm (B5/ -1)
+							     (B5/ -2)
+							 -lg (B5/ -3)
+							
+📒 Float: elementos flotantes
+        📝 float-(direccion)
+		📝 float-(tamaño)-(direccion)
+			direccion:
+				-right (B5/ -end)
+				-left (B5/ -start)
+			tamaño: sm / md / lg / xl
+
+📒 Clear: corrige errores de float
+        📝 clearfix
+
+📒 Display: El espacio que va abarcar un elemento
+        📝 Sintaxis:
+				d-(tipoDisplay)
+				d-(tamaño)-(tipoDisplay)
+						Tamaños   -->  sm
+						(opcional)     md
+									   lg
+									   xl
+
+						Tipo display --> inline (abarca solo el espacio de la palabra)
+									     block (abarca toda la pantalla)
+										 none (desaparece el texto)
+
+📒 Embed: 
+        📝 embed-responsive
+		📝 embed-responsive-(tamañoVideo)
+							-21by9 (21:9)
+							-16by6 (16:9)
+							-4by3 (4:3)
+							-1by1 (1:1)
+		📝 embed-responsive-(item)
+
+📒 Icono de cierre: 
+        📝 Close
+		📝 aria-label
+		📝 &times;
+
+
+
